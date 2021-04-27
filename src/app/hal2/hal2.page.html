@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>hal2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="Primary">
+    <h1>Add data</h1>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="post.userID" placeholder="Masukan ID"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="post.title" placeholder="Masukan Nama Depan"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="post.body" placeholder="Masukan Nama Belakang"></ion-input>
+    </ion-item>
+    <ion-button (click)="submit()">Simpan</ion-button>
+  </ion-list>
+  <ion-text color="secondary">
+    <h1>Edit data</h1>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="upt.userID" placeholder="Masukan ID"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="upt.title" placeholder="Masukan Nama Depan"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="upt.body" placeholder="Masukan Nama Belakang"></ion-input>
+    </ion-item>
+    <ion-button (click)="update()">Simpan</ion-button>
+  </ion-list>
+  <ion-text color="danger">
+    <h1>Delete data</h1>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="del.userID" placeholder="Masukan ID"></ion-input>
+    </ion-item>
+    <ion-button (click)="delete()">Simpan</ion-button>
+  </ion-list>
+</ion-content>

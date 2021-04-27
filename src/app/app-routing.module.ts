@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'hal2',
+    loadChildren: () => import('./hal2/hal2.module').then( m => m.Hal2PageModule)
+  },
 ];
 
 @NgModule({
